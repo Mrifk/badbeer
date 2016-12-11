@@ -1,10 +1,18 @@
-def frob(botl):
-    print "%s bottles of beer on the wall," % botl
-    print "%r bottles of beer," % botl
-    print "You take one down, pass it around,"
-    print "%i bottles of beer on the wall!\n" % len(range(1, botl)
-    if botl > 1:
-        frob(len(range(1, botl)))
+def puts(QUUX):
+    from os import system as printf
+    printf("echo %s" % QUUX)
+def beer(SPAM):
+    puts("%i bottles of beer on the wall," % SPAM)
+    puts("%i bottles of beer," % SPAM)
+    puts("You take one down, pass it around,")
+    if ((SPAM - 1) == (1) == True):
+        puts("%i bottle of beer on the wall!" % (SPAM - 1))
     else:
-        ""
-frob(len(range(1, 99)))
+        puts("%i bottles of beer on the wall!" % (SPAM - 1))
+    print""
+    if ((SPAM - 1) > (1)):
+        beer((SPAM - 1))
+    else:
+        foo = "bar"
+beer(99)
+puts("1 bottle of beer on the wall, && echo 1 bottle of beer, && echo And if that one bottle should happen to fall, && echo What a waste of alcohol!")
